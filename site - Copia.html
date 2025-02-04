@@ -1,0 +1,120 @@
+=<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - O Jogo de Tiro Tático</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/3/3b/Valorant_logo.svg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff4655;
+            color: white;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .logo {
+            width: 150px;
+        }
+        .nav {
+            margin: 20px 0;
+        }
+        .nav button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #ff4655;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav button:hover {
+            background-color: #e03e4e;
+        }
+        .prompt-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        .prompt-box button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #ff4655;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function openPrompt() {
+            let promptBox = document.createElement("div");
+            promptBox.classList.add("prompt-box");
+            promptBox.innerHTML = `<p>Digite algo:</p><input type='text'><br><button onclick='this.parentElement.remove()'>Fechar</button>`;
+            document.body.appendChild(promptBox);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src=https://logospng.org/download/valorant/valorant-2048.png alt="Logo Valorant" class="logo">
+        <h1>Valorant</h1>
+        <h2>O FPS Tático da Riot Games</h2>
+    </header>
+    
+    <div class="nav">
+        <button onclick="window.location.href='#sobre'">Sobre o Jogo</button>
+        <button onclick="window.location.href='#agentes'">Agentes e Habilidades</button>
+        <button onclick="openPrompt()">Abrir Prompt</button>
+    </div>
+    
+    <div class="container" id="sobre">
+        <h2>Sobre o Jogo</h2>
+        <p>Valorant é um jogo de tiro tático 5v5 desenvolvido pela Riot Games, combinando estratégia, habilidades únicas e trabalho em equipe.</p>
+        <img src=https://s2-ge.glbimg.com/AWPR8ONO1qyVnOLprWZ3Kfs8rcA=/0x0:960x540/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/t/B/EMdta3QdyxT4S7HwnlCA/skins-valorant.png alt="Imagem de Valorant">
+    </div>
+    
+    <div class="container" id="agentes">
+        <h2>Agentes e Habilidades</h2>
+        <p>Cada agente em Valorant possui habilidades únicas que podem mudar o rumo da partida. Escolha seu personagem e domine suas táticas.</p>
+        <img src=https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/5106d78bdfc0bb9e4de639c471daf5d5df73c7f5-1920x1080.jpg alt="Imagem dos agentes de Valorant">
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Valorant Fansite - Todos os direitos reservados.Site feito pelo vini</p>
+    </footer>
+</body>
+</html>
